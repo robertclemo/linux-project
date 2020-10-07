@@ -91,3 +91,40 @@ echo " "
 echo " The sum of these 5 bill is: " $sum
 echo " The average of these 5 bill is: " $avg
 sleep 5
+
+# add Megan's FAQ page 
+
+#!/bin/bash
+clear
+echo “*************Welcome to the FAQ page ****************”
+echo “We have included some frequently asked questions topics below”
+echo ” 1) Customer Service.”
+echo ” 2) Store locations.”
+echo ” 3) Return items.”
+echo ” 4) Password reset.”
+echo ” 5) Learn about online billing and the new Average Bill Pay Program.”
+echo ” ”
+read -p “Please select a menu item 1-4! >> ” n
+case $n in
+1)
+clear
+echo “1. Customer Service: ”
+echo “Sales: \nLearn about new customer offers or add to your current services Call 1-888-234-0001 \nCustomer Support: \nGet help with your Hit it and Get it $
+2)
+clear
+echo “Store Locations:”
+echo “Main Branch: \n1607 Red Oak ln, Roanoke VA, 24018 \nDrop Off Loaction: \n2875 Brandon Ave, Roanoke VA, 24018";;
+3)
+clear
+echo “Return Items:”
+echo “How to return to a store: \nBring your item with its original product packaging and tags (if available) and proof of purchase to the customer service de$
+4)
+clear
+echo “Password reset:”
+echo “Your password can be retrieved by going to www.HititandGetit.com/Passwordreset.com \nCalling Customer Support at 1-888-234-0002 to get assistance”;;
+5)
+clear
+echo “Learn about online bill pay and the new Average Bill Pay Program:”
+printf “Benefits of online billing include accessing your recent billing statments \npayment options, and history without delay at your convience.\nSave the enviroment$
+*) echo “invalid option”;;
+esac
