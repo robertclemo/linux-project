@@ -107,7 +107,7 @@ case "$service" in
 echo " "
 echo " "
 
-echo " Hello! Welcome to the Average Bill Pay Program calculator. \nTo start please find the last 5 month of your billing statment.\nLook where it says bill total and insert that number for each month. "
+echo " Hello! Welcome to the Average Bill Pay Program calculator. \nTo start please find the last 5 month of your billing statment.\nLook where it says bill total and insert the number rounded to the next dollar amount. "
 sleep 5
 echo " "
 echo " "
@@ -137,7 +137,7 @@ echo "..THIS IS YOUR NEW AVERAGE BILL PAY.."
 echo " "
 echo " "
 echo " The sum of these 5 bill is: " $sum
-echo " The average of these 5 bill is: " $avg
+echo " You can pay the average monthy bill of: " $avg
 sleep 5
 
 	;;
@@ -152,10 +152,34 @@ sleep 5
 	#PASTE ONLINE BILL PAY HERE
 	;;
 
-	
 
+        
+       "F" | "f" )
+        echo " "    
+        echo "Welcome to the FAQ page we have included some frequently asked questions? \nPlease select a menu item 1-4! \nThank You!"
+echo " "
+sleep 2
+echo " 1) Customer Service."
+echo " 2) Store locations."
+echo " 3) Return items."
+echo " 4) Having problems with BIG dog."
+echo " 5) Learn about online bill pay and new program average bill pay."
+
+read n
+case $n in
+1) echo "Sales: \nLearn about new customer offers or add to your current services Call 1-888-234-0001 \nCustomer Support: \nGet help with your Hit it and Get it services or account questions Call 1-888-234-0002";;
+2) echo "Main Branch: \n1607 Red Oak ln, Roanoke VA, 24018 \nDrop Off Loaction: \n2875 Brandon Ave, Roanoke VA, 24018";;
+3) echo "How to return to a store: \nBring your item with its original product packaging and tags (if available) and proof of purchase to the customer service desk for return or exchange. \nHow to return by mail: \nWhether you need to return items purchased online or in a retail store, you can begin the mail-in return process online";;
+4) echo "We will send a dog catcher";;
+5) echo "Benefits of online include accessing your recent billing statments, payment options, and history without delay at your convience. Save the enviroment and enroll now click here ONLINE BILL PAY.";;
+*) echo "invalid option";;
+esac 
+        
+       
+        ;;      
 esac
 
 echo " "
+
 
 
