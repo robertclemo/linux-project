@@ -180,8 +180,8 @@ sleep 2
 echo " 1) Customer Service."
 echo " 2) Store locations."
 echo " 3) Return items."
-echo " 4) Having problems with BIG dog."
-echo " 5) Learn about online bill pay and new program average bill pay."
+echo " 4) Reset Password"
+echo " 5) Learn about online bill pay."
 
 read n
 case $n in
