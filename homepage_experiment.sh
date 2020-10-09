@@ -149,9 +149,38 @@ sleep 5
 
 	"S" | "s" )
 	echo " "
-	#PASTE ONLINE BILL PAY HERE
+	echo "Support services here"
 	;;
 
+	"P" | "p" )
+	echo " "
+	echo "Phone Services"
+	;;
+
+	"M" | "m" )
+	echo " "
+	echo "Music, TV, Video Services"
+	;;
+
+	"Se" | "se" | "SE" | "sE" )
+	echo " "
+	echo "Security Here"
+	;;
+
+	"I" | "i" )
+	echo " "
+	echo "Internet Services Here"
+	;;
+
+	"F" | "f" )
+	echo " "
+	echo "Frequently-Asked Questions Here"
+	;;
+
+	"C" | "c" )
+	echo " "
+	echo "Contact Us"
+	;;
 	
 
 esac
