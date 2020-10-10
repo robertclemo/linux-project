@@ -137,7 +137,7 @@ echo "..THIS IS YOUR NEW AVERAGE BILL PAY.."
 echo " "
 echo " "
 echo " The sum of these 5 bill is: " $sum
-echo " The average of these 5 bill is: " $avg
+echo " You can make the average your monthy payment contact Customer Support 1-888-234-0002: " $avg
 sleep 5
 
 	;;
@@ -174,7 +174,7 @@ sleep 5
 
 	"F" | "f" )
 	echo " "
-	echo "Welcome to the FAQ page we have included some frequently asked questions? \nPlease select a menu item 1-4! \nThank You!"
+	echo "Welcome to the FAQ page we have included some frequently asked questions? \nPlease select a menu item 1-5! \nThank You!"
 echo " "
 sleep 2
 echo " 1) Customer Service."
@@ -188,8 +188,8 @@ case $n in
 1) echo "Sales: \nLearn about new customer offers or add to your current services Call 1-888-234-0001 \nCustomer Support: \nGet help with your Hit it and Get it services or account questions Call 1-888-234-0002";;
 2) echo "Main Branch: \n1607 Red Oak ln, Roanoke VA, 24018 \nDrop Off Loaction: \n2875 Brandon Ave, Roanoke VA, 24018";;
 3) echo "How to return to a store: \nBring your item with its original product packaging and tags (if available) and proof of purchase to the customer service desk for return or exchange. \nHow to return by mail: \nWhether you need to return items purchased online or in a retail store, you can begin the mail-in return process online";;
-4) echo "We will send a dog catcher";;
-5) echo "Benefits of online include accessing your recent billing statments, payment options, and history without delay at your convience. Save the enviroment and enroll now click here ONLINE BILL PAY.";;
+4) echo "When you log in you are directed to generate a password. \nIf you are not generated a password please call Customer Support at 1-888-234-0002";;
+5) echo "Benefits of online include accessing your recent billing statments, payment options, and history without delay at your convience. Save the enviroment at www.???.com/BillPay.";;
 *) echo "invalid option";;
 esac	
 ;;
