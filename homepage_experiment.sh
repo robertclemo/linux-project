@@ -8,42 +8,44 @@ echo "\n ██████  ███████ ██████  █
 ██      ██      ██   ██      ██ ██    ██ ██  ██ ██ ██   ██     ██      ██      ██  ██ ██    ██    ██    ██ ██   ██    ██    
 ██      ███████ ██   ██ ███████  ██████  ██   ████ ██   ██      ██████ ███████ ██   ████    ██     ██████  ██   ██    ██    "
 
-
+#Possibly edit this header or remove completely
 
 
 
 echo " "
 
-sleep 3
+sleep 1
 
 echo "Initiating customer portal . . . "
 
-sleep 4
+sleep 1
 
 clear
 
 echo "Reticulating spline"
 
-sleep 4
+sleep 1
 
 clear
 
 echo "Loading customer engagement protocols"
 
-sleep 3
+sleep 1
 
 clear
 echo "Putting on our happy face"
 
-sleep 4
+sleep 1
 
 clear
 echo "Wasting your time"
 
-sleep 6
+sleep 1
 
+# while
+while [ 1 ]; do
 clear
-
+echo " " 
 echo "          Home Page Menu          "
 echo "          ____ ____ ____          "
 echo "Choose one of the following options: >> "
@@ -67,7 +69,6 @@ case "$service" in
 
 	"A" | "a" )
 	echo " "
-	clear
 	echo "About Us"
 	echo "_____ __"
 	echo " "
@@ -94,11 +95,19 @@ case "$service" in
 	echo "customer satisfaction, corporate stewardship, and our"
 	echo "award-winning support department! Let us fulfill  all of your"
 	echo "telecommunications needs!"
+	echo " "
+	echo "Press ENTER to continue."
+	read anykey
 	;;
+
+
 
 	"L" | "l" )
 	echo " "
 	echo "We are located at __________________"
+	echo " "
+        echo "Press ENTER to continue."
+        read anykey
 	;;
 
 	"B" | "b" )
@@ -140,68 +149,156 @@ echo " The sum of these 5 bill is: " $sum
 echo " You can make the average your monthy payment contact Customer Support 1-888-234-0002: " $avg
 sleep 5
 
+	echo " "
+	echo "Press ENTER to continue."
+	read anykey
 	;;
 
 	"O" | "o" )
 	echo " "
 	echo "ONLINE BILL PAY HERE"
+	echo " "
+	echo "Press ENTER to continue."
+	read anykey
 	;;
 
 	"S" | "s" )
 	echo " "
 	echo "Support services here"
+	echo " "
+	echo "Press ENTER to continue."
+	read anykey
 	;;
 
 	"P" | "p" )
 	echo " "
 	echo "Phone Services"
+	echo "Choose one of the following options"
+	echo "[L]and Line"
+	echo "[M]obile Line"
+	echo "[D]ata Plan"
+	read phone_services
+
+		case "$phone_services" in
+			"L" | "l" )
+			echo "You have indicated that you want a land line."
+			echo " "
+			sleep 1
+			echo "We have an easy land line package available for $49 a month."
+			echo " "
+			echo "This price includes installation in our service area, and"
+			echo "your service will periodically be monitored for quality assurance"
+			echo "purposes. You will not be notified unless there exists cause for"
+			echo "service interruption. Rest assured, the contents of your calls"
+			echo "will NOT be monitored, thus ensuring the privacy of our customers."
+			echo " "
+			read -p "Please verify your password." phone_services_username
+			echo "Thank you, $phone_services_username!"
+			sleep 1
+			read -p "Please enter your home address." phone_services_address
+			echo "Thank you."
+			sleep 2
+			clear
+			echo "You have purchased a Land Line for your address at"
+			echo " "
+			echo "$phone_services_address"
+			;;
+
+			"M" | "m" )
+			echo "You have indicated that you want a Mobile Line."
+			echo " "
+			sleep 1
+			echo "Our premier mobile line package includes unlimited calling from"
+			echo "ALL US States and territories. Texting from non-mainland sites"
+			echo "is a flat 10 US cents per text-only message. Media texting ranges"
+			echo "from 75 cents, to a 1 dollar depending on file size."
+			echo " "
+			echo "Speeds are dependent on line-of-sight to your regional transponder."
+			echo "In other words, the closer to our transponder, the faster your"
+			echo "service will be."
+			echo " "
+			sleep 6
+			clear
+			echo "Of course, if you stop paying for your service, none of this will"
+			echo "work, and you will be stuck in the middle of nowhere with nobody"
+			echo "coming to save you."
+			;;
+
+			"D" | "d" )
+			echo "You have indicated that you want a Data Plan"
+			echo " "
+			sleep 1
+			echo "Data plan stuff "
+			;;
+		esac
+	echo " "
+	echo "Press ENTER to continue."
+	read anykey
 	;;
 
 	"M" | "m" )
 	echo " "
 	echo "Music, TV, Video Services"
+	echo " "
+	echo "Press ENTER to continue."
+	read anykey
 	;;
 
 	"Se" | "se" | "SE" | "sE" )
 	echo " "
 	echo "Security Here"
+	echo " "
+	echo "Press ENTER to continue."
+	read anykey
 	;;
 
 	"I" | "i" )
 	echo " "
 	echo "Internet Services Here"
+	echo " "
+	echo "Press ENTER to continue."
+	read anykey
 	;;
 
 	"F" | "f" )
 	echo " "
 	echo "Welcome to the FAQ page we have included some frequently asked questions? \nPlease select a menu item 1-5! \nThank You!"
-echo " "
-sleep 2
-echo " 1) Customer Service."
-echo " 2) Store locations."
-echo " 3) Return items."
-echo " 4) Reset Password"
-echo " 5) Learn about online bill pay."
-
-read n
-case $n in
-1) echo "Sales: \nLearn about new customer offers or add to your current services Call 1-888-234-0001 \nCustomer Support: \nGet help with your Hit it and Get it services or account questions Call 1-888-234-0002";;
-2) echo "Main Branch: \n1607 Red Oak ln, Roanoke VA, 24018 \nDrop Off Loaction: \n2875 Brandon Ave, Roanoke VA, 24018";;
-3) echo "How to return to a store: \nBring your item with its original product packaging and tags (if available) and proof of purchase to the customer service desk for return or exchange. \nHow to return by mail: \nWhether you need to return items purchased online or in a retail store, you can begin the mail-in return process online";;
-4) echo "When you log in you are directed to generate a password. \nIf you are not generated a password please call Customer Support at 1-888-234-0002";;
-5) echo "Benefits of online include accessing your recent billing statments, payment options, and history without delay at your convience. Save the enviroment at www.???.com/BillPay.";;
-*) echo "invalid option";;
-esac	
-;;
+	echo " "
+	sleep 2
+	echo " 1) Customer Service."
+	echo " 2) Store locations."
+	echo " 3) Return items."
+	echo " 4) Reset Password"
+	echo " 5) Learn about online bill pay."
+	echo " "
+		read n
+		echo " "
+			case $n in
+				1) echo "Sales: \nLearn about new customer offers or add to your current services Call 1-888-234-0001 \nCustomer Support: \nGet help with your Hit it and Get it services or account questions Call 1-888-234-0002";;
+				2) echo "Main Branch: \n1607 Red Oak ln, Roanoke VA, 24018 \nDrop Off Loaction: \n2875 Brandon Ave, Roanoke VA, 24018";;
+				3) echo "How to return to a store: \nBring your item with its original product packaging and tags (if available) and proof of purchase to the customer service desk for return or exchange. \nHow to return by mail: \nWhether you need to return items purchased online or in a retail store, you can begin the mail-in return process online";;
+				4) echo "When you log in you are directed to generate a password. \nIf you are not generated a password please call Customer Support at 1-888-234-0002";;
+				5) echo "Benefits of online include accessing your recent billing statments, payment options, and history without delay at your convience. Save the enviroment at www.???.com/BillPay.";;
+				*) echo "invalid option";;
+			esac	
+	echo " "
+	echo "Press ENTER to continue."
+	read anykey
+		;;
 
 	"C" | "c" )
 	echo " "
 	echo "Contact Us"
+	echo " "
+	echo "Press ENTER to continue."
+	read anykey
 	;;
-	
 
 esac
 
-echo " "
+
 
 # change for no reason
+
+# end while
+done
