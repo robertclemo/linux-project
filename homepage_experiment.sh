@@ -54,7 +54,7 @@ echo "[A]bout Us"
 echo "[L]ocation of Our Customer Center"
 echo "[B]ill Pay Calculator"
 echo "[R]outers"
-echo "[S]upport Services"
+echo "[Ca]ble"
 echo "[P]hone Service"
 echo "[M]usic, TV, Video Service"
 echo "[Se]curity"
@@ -186,9 +186,23 @@ sleep 5
 	read anykey
 	;;
 
-	"S" | "s" )
+	"Ca" | "ca" | "cA" | "CA" )
 	echo " "
-	echo "Support services here"
+	echo "----------Welcome to the Cable page!---------"
+	sleep 1.75
+	echo "Here we offer top of line cable service filled with over 300+ channels with regional sports, movies, and the most popular content available."
+	sleep 1.75
+	echo "For 80.00/mo we will provide and assure you 10/10 amazing good quality service"
+	sleep 1.75
+
+	y=1
+	read -p "Would you like our top of line , 10/10 cable service? (1 for yes, 2 for no) >> " cable
+	if [ $cable -eq $y ]
+	then
+	echo "You are indeed a smart fella. *SERVICE AQUIRED* "
+	else
+	echo "Sheesh, you don't know what you're missing!"
+	fi
 	echo " "
 	echo "Press ENTER to continue."
 	read anykey
