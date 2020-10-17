@@ -56,7 +56,6 @@ echo "[B]ill Pay Calculator"
 echo "[R]outers"
 echo "[Ca]ble"
 echo "[P]hone Service"
-echo "[M]usic, TV, Video Service"
 echo "[Se]curity"
 echo "[I]nternet Service"
 echo "[F]requently-Asked Questions"
@@ -274,17 +273,31 @@ sleep 5
 	read anykey
 	;;
 
-	"M" | "m" )
-	echo " "
-	echo "Music, TV, Video Services"
-	echo " "
-	echo "Press ENTER to continue."
-	read anykey
-	;;
 
 	"Se" | "se" | "SE" | "sE" )
 	echo " "
-	echo "Security Here"
+	echo "We offer top dog security for your personal protection"
+	sleep 2
+	echo "Please choose the size of your needs"
+	sleep 2
+ 
+
+	#nothing=4
+	echo "These are the dog breeds we have available: "
+	echo "1. Top Dog"
+	echo "2. Defender Dog"
+	echo "3. Barkum Dog"
+	read -p "Would you like to choose your dog? 1 for yes/2 for no [1-2] >> " oof
+	if [ $oof -eq 1 ]
+	then
+	echo "You have selected Top Dog"
+	elif [ $oof -eq 2 ]
+	then
+	echo "Thank you for choosing a Large Defender dog"
+	else  
+	echo "Thank you for getting a Barkum"
+	echo "Thank you have a nice day"
+	fi
 	echo " "
 	echo "Press ENTER to continue."
 	read anykey
