@@ -303,7 +303,7 @@ sleep 5
 	read anykey
 	;;
 
-	"Ca" | "ca" | "cA" | "CA" )
+	"Cam" | "cam" | "cAM" | "CAM" | "CaM" | "cAm" )
 	echo " "
 	echo "We bring you the latest technology of security cameras. The Retina"
 	sleep 2
