@@ -332,7 +332,7 @@ sleep 5
 	read anykey
 	;;
 	
-	"St" | "ST" | "sT" | )
+	"St" | "ST" | "sT" )
 	echo " "
 	echo "-------Welcome to the Streaming Page!--------"
 	sleep 2
