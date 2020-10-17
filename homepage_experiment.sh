@@ -54,7 +54,7 @@ echo "[A]bout Us"
 echo "[L]ocation of Our Customer Center"
 echo "[B]ill Pay Calculator"
 echo "[R]outers"
-echo "[Ca]ble"
+echo "[Cab]le"
 echo "[P]hone Service"
 echo "[Se]curity"
 echo "[Ca]mera"
@@ -186,7 +186,7 @@ sleep 5
 	read anykey
 	;;
 
-	"Ca" | "ca" | "cA" | "CA" )
+	"Cab" | "cab" | "cAb" | "CAB" | "cAB" )
 	echo " "
 	echo "----------Welcome to the Cable page!---------"
 	sleep 1.75
