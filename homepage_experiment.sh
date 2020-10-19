@@ -14,7 +14,12 @@ echo "\n ██████  ███████ ██████  █
 
 #Possibly edit this header or remove completely
 
-
+read -p "What is your name, user? >> " user
+sleep 2
+read -p "Please enter your password, $user. >> " userpassword1
+sleep 2
+clear
+echo "Password accepted, $user. Fetching menu information..."|pv -qL 50
 
 echo " "
 
@@ -53,13 +58,6 @@ sleep 1
 # while
 while [ 1 ]; do
 
-clear
-read -p "What is your name, user? >> " user
-sleep 2
-read -p "Please enter your password, $user. >> " userpassword1
-sleep 2
-clear
-echo "Password accepted, $user. Fetching menu information..."|pv -qL 50
 sleep 3
 clear
 echo " " 
