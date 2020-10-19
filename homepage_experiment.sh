@@ -18,7 +18,9 @@ echo "\n ██████  ███████ ██████  █
 
 echo " "
 
-sleep 1
+sleep 4
+
+clear
 
 echo "Initiating customer portal . . . "|pv -qL 50
 
