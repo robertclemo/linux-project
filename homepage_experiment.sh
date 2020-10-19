@@ -413,7 +413,7 @@ case "$service" in
 	read anykey
 	;;
 	
-	"Sa" | "sA" | "SA"
+	"Sa" | "sA" | "SA" )
 	echo " "
 	echo "--------------Welcome To The Satellite Alarm System Page------------"|pv -qL 25
 	sleep 2
@@ -447,7 +447,7 @@ case "$service" in
 	read anykey
 	;;
 
-	"T" | "t"
+	"T" | "t" )
 	echo " "
 	echo "------------------Get To Know Data Tokens!----------------------"
 	sleep 2
