@@ -1,6 +1,10 @@
 #!/bin/bash
 clear
 # Presentation GUI
+# NCI AWS re/START Cohort 1
+# Group 2
+# Coded by Bryan Rolle, Christie Higgins, Essie Hollandsworth, Marshall Whittaker, Megan Kumar, and Robert Clemo
+# Final edits made 10-20-2020
 
 echo "\n ██████  ███████ ██████  ███████  ██████  ███    ██  █████       ██████ ███████ ███    ██ ████████ ██    ██ ██████  ██    ██ 
 ██   ██ ██      ██   ██ ██      ██    ██ ████   ██ ██   ██     ██      ██      ████   ██    ██    ██    ██ ██   ██  ██  ██  
@@ -48,6 +52,10 @@ sleep 1
 while [ 1 ]; do
 
 clear
+read -p "What is your name, user? >> " user
+sleep 2
+echo "Thank you, $user. Fetching menu information..."|pv -qL 50
+sleep 3
 echo " " 
 echo "          Home Page Menu          "
 echo "          ____ ____ ____          "
@@ -530,7 +538,7 @@ esac
 
 
 
-# change for no reason
+
 
 # end while
 done
