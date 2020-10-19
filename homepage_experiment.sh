@@ -56,8 +56,12 @@ while [ 1 ]; do
 clear
 read -p "What is your name, user? >> " user
 sleep 2
-echo "Thank you, $user. Fetching menu information..."|pv -qL 50
+read -p "Please enter your password, $user. >> " userpassword1
+sleep 2
+clear
+echo "Password accepted, $user. Fetching menu information..."|pv -qL 50
 sleep 3
+clear
 echo " " 
 echo "          Home Page Menu          "
 echo "          ____ ____ ____          "
@@ -85,8 +89,8 @@ case "$service" in
 
 	"A" | "a" )
 	echo " "
-	echo "About Us"
-	echo "_____ __"
+	echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~About Us~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+	echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~_____ __~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 	echo " "
 	echo "Persona Century Corporation was created in the early 2020s by an elite"|pv -qL 25
 	echo "group of students then studying cloud engineering at New College"|pv -qL 25
@@ -104,7 +108,7 @@ case "$service" in
 	echo "end of the year. Gone were the days of customers wondering if"|pv -qL 25
 	echo "they would be safe in their own homes. The new company would"|pv -qL 25
 	echo "treat their customers right! "|pv -qL 25
-	sleep 4
+	sleep 5
 	echo " "
 	echo "Driven by this bold plan, the intrepid students formed the company"|pv -qL 25
 	echo "we now all know and love: The Persona Century Corporation. "|pv -qL 25
@@ -393,7 +397,7 @@ case "$service" in
 	read anykey
 	;;
 	
-	"St" | "ST" | "sT" )
+	"St" | "ST" | "sT" | "st" )
 	echo " "
 	echo "-------Welcome to the Streaming Page!--------"
 	sleep 2
@@ -423,7 +427,7 @@ case "$service" in
 	read anykey
 	;;
 	
-	"Sa" | "sA" | "SA" )
+	"Sa" | "sA" | "SA" | "sa" )
 	echo " "
 	echo "--------------Welcome To The Satellite Alarm System Page------------"|pv -qL 25
 	sleep 2
