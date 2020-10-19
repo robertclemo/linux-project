@@ -16,34 +16,37 @@ echo " "
 
 sleep 1
 
-echo "Initiating customer portal . . . "
+echo "Initiating customer portal . . . "|pv -qL 50
 
 sleep 1
 
 clear
 
-echo "Reticulating spline"
+echo "Reticulating spline"|pv -qL 50
 
 sleep 1
 
 clear
 
-echo "Loading customer engagement protocols"
+echo "Loading customer engagement protocols"|pv -qL 50
 
 sleep 1
 
 clear
-echo "Putting on our happy face"
+echo "Putting on our happy face"|pv -qL 50
 
 sleep 1
 
 clear
-echo "Wasting your time"
+echo "Wasting your time"|pv -qL 50
 
 sleep 1
+
+
 
 # while
 while [ 1 ]; do
+
 clear
 echo " " 
 echo "          Home Page Menu          "
@@ -61,6 +64,7 @@ echo "[Cam]era"
 echo "[St]reaming"
 echo "[F]requently-Asked Questions"
 echo "[C]ontact Us"
+echo "[E]xit"
 echo " "
 
 read service
@@ -72,29 +76,33 @@ case "$service" in
 	echo "About Us"
 	echo "_____ __"
 	echo " "
-	echo "Persona Century Corporation was created in the early 2020s by an elite"
-	echo "group of students then studying cloud engineering at New College"
-	echo "Institute, in Martinsville, Virginia. Due to the effects of the 2020"
-	echo "coronavirus pandemic, they were forced to study remotely. At the time,"
-	echo "telecommunications corporations were making things difficult to say"
-	echo "the least. Our founders knew there had to be a better way . . . "
+	echo "Persona Century Corporation was created in the early 2020s by an elite"|pv -qL 25
+	echo "group of students then studying cloud engineering at New College"|pv -qL 25
+	echo "Institute, in Martinsville, Virginia. Due to the effects of the 2020"|pv -qL 25
+	echo "coronavirus pandemic, they were forced to study remotely. At the time,"|pv -qL 25
+	echo "telecommunications corporations were making things difficult to say"|pv -qL 25
+	echo "the least. Our founders knew there had to be a better way . . . "|pv -qL 25
+	sleep 4
 	echo " "
-	echo "For many long weeks, they toiled day and night. Finally,"
-	echo "a breakthrough was made. They would create a new telecommunications"
-	echo "company with the founders' core principles in mind. No longer would"
-	echo "a customer's internet cut out with zero communication from the"
-	echo "cable company. Never again would rates be quietly raised at the"
-	echo "end of the year. Gone were the days of customers wondering if"
-	echo "they would be safe in their own homes. The new company would"
-	echo "treat their customers right! "
+	echo "For many long weeks, they toiled day and night. Finally,"|pv -qL 25
+	echo "a breakthrough was made. They would create a new telecommunications"|pv -qL 25
+	echo "company with the founders' core principles in mind. No longer would"|pv -qL 25
+	echo "a customer's internet cut out with zero communication from the"|pv -qL 25
+	echo "cable company. Never again would rates be quietly raised at the"|pv -qL 25
+	echo "end of the year. Gone were the days of customers wondering if"|pv -qL 25
+	echo "they would be safe in their own homes. The new company would"|pv -qL 25
+	echo "treat their customers right! "|pv -qL 25
+	sleep 4
 	echo " "
-	echo "Driven by this bold plan, the intrepid students formed the company"
-	echo "we now all know and love: The Persona Century Corporation. "
+	echo "Driven by this bold plan, the intrepid students formed the company"|pv -qL 25
+	echo "we now all know and love: The Persona Century Corporation. "|pv -qL 25
 	echo " "
-	echo "The Persona Century Corporation is proud of its record of"
-	echo "customer satisfaction, corporate stewardship, and our"
-	echo "award-winning support department! Let us fulfill  all of your"
-	echo "telecommunications needs!"
+	sleep 3
+	echo "The Persona Century Corporation is proud of its record of"|pv -qL 25
+	echo "customer satisfaction, corporate stewardship, and our"|pv -qL 25
+	echo "award-winning support department! Let us fulfill  all of your"|pv -qL 25
+	echo "telecommunications needs!"|pv -qL 25
+	sleep 4
 	echo " "
 	echo "Press ENTER to continue."
 	read anykey
@@ -113,41 +121,41 @@ case "$service" in
 	"B" | "b" )
 	echo " "
 	 #Bill Pay Program Here
-echo " "
-echo " "
+	echo " "
+	echo " "
 
-echo " Hello! Welcome to the Average Bill Pay Program calculator. \nTo start please find the last 5 month of your billing statment.\nLook where it says bill total and insert that number for each month. "
-sleep 5
-echo " "
-echo " "
-echo ".......AVERAGE BILL PAY CALCULATOR......."
-sleep 5
-echo " "
-echo " "
-echo " "
-echo "Please enter your first bill: "
-read a
-echo "Second bill: "
-read b
-echo "Third bill: "
-read c
-echo "Fourth bill: "
-read d
-echo "Fifth bill: "
-read e
-echo " Thank You your Average Bill Pay Program is being calculated"
-sleep 5
-clear
+	echo " Hello! Welcome to the Average Bill Pay Program calculator. \nTo start please find the last 5 month of your billing statment.\nLook where it says bill total and insert that number for each month. "
+	sleep 5
+	echo " "
+	echo " "
+	echo ".......AVERAGE BILL PAY CALCULATOR......."
+	sleep 5
+	echo " "
+	echo " "
+	echo " "
+	echo "Please enter your first bill: "
+	read a
+	echo "Second bill: "
+	read b
+	echo "Third bill: "
+	read c
+	echo "Fourth bill: "
+	read d
+	echo "Fifth bill: "
+	read e
+	echo " Thank You your Average Bill Pay Program is being calculated"
+	sleep 5
+	clear
 
-sum=$(($a + $b + $c + $d + $e))
-avg=$(echo $sum / 5 | bc -l )
+	sum=$(($a + $b + $c + $d + $e))
+	avg=$(echo $sum / 5 | bc -l )
 
-echo "..THIS IS YOUR NEW AVERAGE BILL PAY.." 
-echo " "
-echo " "
-echo " The sum of these 5 bill is: " $sum
-echo " You can make the average your monthy payment contact Customer Support 1-888-234-0002: " $avg
-sleep 5
+	echo "..THIS IS YOUR NEW AVERAGE BILL PAY.." 
+	echo " "
+	echo " "
+	echo " The sum of these 5 bill is: " $sum
+	echo " You can make the average your monthy payment contact Customer Support 1-888-234-0002: " $avg
+	sleep 5
 
 	echo " "
 	echo "Press ENTER to continue."
@@ -230,10 +238,13 @@ sleep 5
 			echo "service interruption. Rest assured, the contents of your calls"
 			echo "will NOT be monitored, thus ensuring the privacy of our customers."
 			echo " "
-			read -p "Please verify your password." phone_services_username
+			read -p "Please indicate the user you wish to buy a line for." phone_services_username
+			echo " "
 			echo "Thank you, $phone_services_username!"
 			sleep 1
+			clear
 			read -p "Please enter your home address." phone_services_address
+			echo " "
 			echo "Thank you."
 			sleep 2
 			clear
@@ -246,15 +257,28 @@ sleep 5
 			echo "You have indicated that you want a Mobile Line."
 			echo " "
 			sleep 1
+			echo " "
 			echo "Our premier mobile line package includes unlimited calling from"
 			echo "ALL US States and territories. Texting from non-mainland sites"
 			echo "is a flat 10 US cents per text-only message. Media texting ranges"
 			echo "from 75 cents, to a 1 dollar depending on file size."
 			echo " "
+			sleep 3.5
 			echo "Speeds are dependent on line-of-sight to your regional transponder."
 			echo "In other words, the closer to our transponder, the faster your"
 			echo "service will be."
 			echo " "
+			sleep 6
+			read -p "Are you interested in a mobile line? [1] for yes, [2] for no. " mobile_choice
+			echo " "
+				if ($mobile_choice -eq 1)
+				then
+				echo "We got you, fam! Linemen will be at your address in the morning!"
+				elif ($mobile_choice -eq 2)
+				then
+				echo "Maybe another time!"
+				
+				fi
 			sleep 6
 			clear
 			echo "Of course, if you stop paying for your service, none of this will"
@@ -266,7 +290,30 @@ sleep 5
 			echo "You have indicated that you want a Data Plan"
 			echo " "
 			sleep 1
-			echo "Data plan stuff "
+			echo "We have only one data plan available at the moment. Our"
+			echo "Wanderlust Plan will give you the freedom to "
+			echo "never miss the forest for the trees. You can continue over that"
+			echo "far ridge, where a glacial valley full of things to discover,"
+			echo "and our signal coverage is as boundless as the possibilities."
+			echo " "
+			read -p "Where have you had trouble getting a data signal before? " data_dead_spot
+			echo "Guess what?"
+			echo " "
+			sleep 2
+			echo "You'd be covered in places like $data_dead_spot if you had our"
+			echo "data plan!"
+			echo " "
+			read -p "Would you be interested in purchasing a data plan? [1] for yes, [2] for no " data_plan_choice
+			echo " "
+			if [ $data_plan_choice -eq 1 ]
+			then
+			echo "Thank you for signing up for a data plan!"
+			elif [ $data_plan_choice -eq 2 ]
+			then
+			echo "It won't be your Spotify playlist. Those banjos will be real. Good-bye."
+			else
+			echo "Initiating self-destruct in T-3 minutes."
+			fi
 			;;
 		esac
 	echo " "
@@ -308,7 +355,7 @@ sleep 5
 	echo " "
 	echo "We bring you the latest technology of security cameras. The Retina"
 	sleep 2
-	echo "Extreamly movement sensitive, instant focus gives you technology \nequal to the human eye."
+	echo "Extremely movement sensitive, instant focus gives you technology \nequal to the human eye."
 
 	sleep 2
 	echo " "
@@ -325,7 +372,7 @@ sleep 5
 	then
 	echo "Thank you for your order of I360"
 	else  
-	echo "Enjoy your survialance experience if you bought one"
+	echo "Enjoy your surveillance experience if you bought one"
 	fi
 	echo " "
 	echo "Press ENTER to continue."
@@ -400,12 +447,19 @@ sleep 5
 	echo "Phone: 540-272-4498"
 	sleep 1.75
 	echo "Visit Us: 7211 The Greatest Dr."
-
+	sleep 1.75
+	echo "Website: https://www.personacentury.com"
 	echo " "
 	echo "Press ENTER to continue."
 	read anykey
 	;;
 
+	"E" | "e" )
+	echo " "
+	echo "We are sorry to see you go, $user. Please feel free to return anytime."
+	exit
+	#read anykey
+	;;
 esac
 
 
