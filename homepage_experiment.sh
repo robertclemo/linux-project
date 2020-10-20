@@ -508,6 +508,7 @@ case "$service" in
 		echo " "
 		case $n in
 			1) echo "Sales: \nLearn about new customer offers or add to your current services Call 1-888-234-0001 \nCustomer Support: \nGet help with your new services or account questions Call 1-888-234-0002";;
+
 			2) echo "Main Branch: \n1607 Red Oak ln, Roanoke VA, 24018 \nDrop Off Locations: \n2875 Brandon Ave, Roanoke VA, 24018";;
 			3) echo "How to return to a store: \nBring your item with its original product packaging and tags if available and proof of purchase to the customer service desk for return or exchange. \nHow to return by mail: \nWhether you need to return items purchased online or in a retail store, you can begin the mail-in return process online";;
 			4) echo "When you log in you are directed to generate a password. \nIf you are not generated a password please call Customer Support at 1-888-234-0002";;
@@ -522,6 +523,7 @@ case "$service" in
 	done
 
 ;;
+
 
 	"C" | "c" )
 	echo " "
