@@ -254,12 +254,12 @@ case "$service" in
 			echo "service interruption. Rest assured, the contents of your calls"
 			echo "will NOT be monitored, thus ensuring the privacy of our customers."
 			echo " "
-			read -p "Please indicate the user you wish to buy a line for." phone_services_username
+			read -p "Please indicate the user you wish to buy a line for. " phone_services_username
 			echo " "
 			echo "Thank you, $phone_services_username!"
 			sleep 1
 			clear
-			read -p "Please enter your home address." phone_services_address
+			read -p "Please enter your home address. " phone_services_address
 			echo " "
 			echo "Thank you."
 			sleep 2
