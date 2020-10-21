@@ -195,17 +195,18 @@ case "$service" in
 
 	"R" | "r" )
 	echo " "
-	echo "--------------Welcome to the Router Page!----------"
+	echo "--------------Welcome to the Router Page!----------"|pv -qL 25
 	sleep 1.3
-	echo "Here we provide our glorious routers brand new and very reliable!"
+	echo "Here we provide our glorious routers brand new and very reliable!"|pv -qL 25
 	sleep 1.3
-	echo "We make sure to have the top of line routers, nothing cheap."
+	echo "We make sure to have the top of line routers, nothing cheap."|pv -qL 25
 	sleep 1.3
-	echo "We assure you that these routers will provide stable connection and fast speeds!"
+	echo "We assure you that these routers will provide stable connection and fast speeds!"|pv -qL 25
 	sleep 1.3
-	echo "We offer you the choice to either buy or rent our routers"
+	echo "We offer you the choice to either buy or rent our routers"|pv -qL 25
 	sleep 1.3
-	echo "Rental will cost 20.00 a month and Ownership will cost 100"
+	echo "Rental will cost 20.00 a month and Ownership will cost 100"|pv -qL 25
+	echo " "
 
 
 	y=1
@@ -213,12 +214,12 @@ case "$service" in
 	read -p "Would you like to rent a router or buy a router? [1 for rental , 2 for ownership] >>" router
 	if [ $router -eq $y ]
 	then 
-	echo "Great choice, you'll be renting this router for 20 a month!"
+	echo "Great choice, you'll be renting this router for 20 a month!"|pv -qL 25
 	elif [ $router -eq $n ]
 	then 
-	echo "Great choice, you won't regret it!"
+	echo "Great choice, you won't regret it!"|pv -qL 25
 	else
-	echo "I guess you don't want internet, lol"
+	echo "I guess you don't want internet, lol"|pv -qL 25
 	fi
 	echo " "
 	echo "Press ENTER to continue."
@@ -227,20 +228,21 @@ case "$service" in
 
 	"Cab" | "cab" | "cAb" | "CAB" | "cAB" )
 	echo " "
-	echo "----------Welcome to the Cable page!---------"
+	echo "----------Welcome to the Cable page!---------"|pv -qL 25
 	sleep 1.75
-	echo "Here we offer top of line cable service filled with over 300+ channels with regional sports, movies, and the most popular content available."
+	echo "Here we offer top of line cable service filled with over 300+ channels with regional sports, movies, and the most popular content available."|pv -qL 25
 	sleep 1.75
-	echo "For 80.00/mo we will provide and assure you 10/10 amazing good quality service"
+	echo "For 80.00/mo we will provide and assure you 10/10 amazing good quality service"|pv -qL 25
 	sleep 1.75
+	echo " "
 
 	y=1
 	read -p "Would you like our top of line , 10/10 cable service? (1 for yes, 2 for no) >> " cable
 	if [ $cable -eq $y ]
 	then
-	echo "You are indeed a smart fella. *SERVICE AQUIRED* "
+	echo "You are indeed a smart fella. *SERVICE AQUIRED* "|pv -qL 25
 	else
-	echo "Sheesh, you don't know what you're missing!"
+	echo "Sheesh, you don't know what you're missing!"|pv -qL 25
 	fi
 	echo " "
 	echo "Press ENTER to continue."
@@ -354,7 +356,7 @@ case "$service" in
 
 
 	"Se" | "se" | "SE" | "sE" )
-	echo " "
+	echo "-----------Welcome to the Security Page!-------------- "
 	echo "We offer top dog security for your personal protection"
 	sleep 2
 	echo "Please choose the size of your needs"
@@ -383,7 +385,7 @@ case "$service" in
 	;;
 
 	"Cam" | "cam" | "cAM" | "CAM" | "CaM" | "cAm" )
-	echo " "
+	echo "------------Welcome to the Camera Page!----------- "
 	echo "We bring you the latest technology of security cameras. The Retina"
 	sleep 2
 	echo "Extremely movement sensitive, instant focus gives you technology \nequal to the human eye."
@@ -412,28 +414,28 @@ case "$service" in
 	
 	"St" | "ST" | "sT" | "st" )
 	echo " "
-	echo "-------Welcome to the Streaming Page!--------"
+	echo "-------Welcome to the Streaming Page!--------"|pv -qL 35
 	sleep 2
-	echo "We are partnered with Amazon and we offer Amazon prime!"
+	echo "We are partnered with Amazon and we offer Amazon prime!"|pv -qL 35
 	sleep 2 
-	echo "If you join this premium service you get: Free premium music and Amazon exclusive originals!"
+	echo "If you join this premium service you get: Free premium music and Amazon exclusive originals!"|pv -qL 35
 	sleep 2
-	echo "The premium music extenstion offers the all latest albums and various musical arists!"
+	echo "The premium music extenstion offers the all latest albums and various musical arists!"|pv -qL 35
 	sleep 2
-	echo "We offer the exclusive amazon orignals ranging from movies and tv shows!"
+	echo "We offer the exclusive amazon orignals ranging from movies and tv shows!"|pv -qL 35
 	sleep 2
-	echo "We offer various live tv networks such as : COMEDYCENTRAL, ESPN, TNT, FOX, ETC."
+	echo "We offer various live tv networks such as : COMEDYCENTRAL, ESPN, TNT, FOX, ETC."|pv -qL 35
 	sleep 2
-	echo "We offer various local stations such as: CBS, NBC, PBS, ABC, ETC." 
-
+	echo "We offer various local stations such as: CBS, NBC, PBS, ABC, ETC."|pv -qL 35 
+        echo " "
 
 	y=1
 	read -p "Would you like to join?  1 is yes, 2 is no. [1-2] >> " oof
 	if [ $oof -eq $y ] 
 	then 
-	echo "Great choice! We're glad you decided to join!"
+	echo "Great choice! We're glad you decided to join!"|pv -qL 35
 	else
-	echo "That's ok. Maybe next time!" 
+	echo "That's ok. Maybe next time!"|pv -qL 35 
 	fi
 	echo " "
 	echo "Press ENTER to continue."
@@ -539,18 +541,18 @@ case "$service" in
 
 	"C" | "c" )
 	echo " "
-	echo "-------------Contact Us------------"
-	echo "Welcome to the Contact Us page!"
+	echo "-------------Contact Us------------"|pv -qL 35
+	echo "Welcome to the Contact Us page!"|pv -qL 35
 	sleep 1.75
-	echo "Here you'll see the information provided to contact us via phone or email."
+	echo "Here you'll see the information provided to contact us via phone or email."|pv -qL 35
 	sleep 1.75
-	echo "Email: Comedygold808@gmail.com"
+	echo "Email: Comedygold808@gmail.com"|pv -qL 35
 	sleep 1.75
-	echo "Phone: 540-272-4498"
+	echo "Phone: 540-272-4498"|pv -qL 35
 	sleep 1.75
-	echo "Visit Us: 7211 The Greatest Dr."
+	echo "Visit Us: 7211 The Greatest Dr."|pv -qL 35
 	sleep 1.75
-	echo "Website: https://www.personacentury.com"
+	echo "Website: https://www.personacentury.com"|pv -qL 35
 	echo " "
 	echo "Press ENTER to continue."
 	read anykey
