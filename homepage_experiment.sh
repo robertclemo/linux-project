@@ -181,10 +181,10 @@ case "$service" in
 	sum=$(($a + $b + $c + $d + $e + $f))
 	avg=$(echo "scale=0; $sum / 6" | bc -l )
 
-	echo "..THIS IS YOUR NEW AVERAGE BILL PAY.." 
+	echo "..THIS IS YOUR NEW AVERAGE BILL PAY.."
 	echo " "
 	echo " "
-	echo " The total of these 6 bill is and we will use this to find your New Monthly Payment: " $sum
+	echo " The total of these 6 bill allows us to find your New Monthly Payment: " $sum
 	echo " Your New Monthly Payment is now: " $avg
 	sleep 5
 
