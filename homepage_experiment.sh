@@ -138,11 +138,12 @@ case "$service" in
 	echo " "
 	echo " "
 
-	echo " Hello! Welcome to the Average Bill Pay Program calculator. \nTo start please find the last 5 month of your billing statement.\nLook where it says bill total and insert that number for each month round up. "|pv -qL 25
+	echo " Hello! Welcome to the Average Bill Pay Program calculator. \nTo start please find the last 6 month of your billing statement.\nLook where it says bill total and insert that number for each month round up. "|pv -qL 25
  
 	sleep 5
 	echo " "
 	echo " "
+	clear
 	echo ".......AVERAGE BILL PAY CALCULATOR......."
 	sleep 5
 	echo " "
@@ -158,18 +159,20 @@ case "$service" in
 	read d
 	echo "Fifth bill: "
 	read e
+	echo "Sixth bill: "
+	read f	
 	echo " Thank You your Average Bill Pay Program is being calculated"|pv -qL 25
 
 	sleep 5
 	clear
 
-	sum=$(($a + $b + $c + $d + $e))
-	avg=$(echo $sum / 5 | bc -l )
+	sum=$(($a + $b + $c + $d + $e + $f))
+	avg=$(echo "scale=0; $sum / 6" | bc -l )
 
 	echo "..THIS IS YOUR NEW AVERAGE BILL PAY.." 
 	echo " "
 	echo " "
-	echo " The total of these 5 bill is and we will use this to find your New Monthly Payment: " $sum
+	echo " The total of these 6 bill is and we will use this to find your New Monthly Payment: " $sum
 	echo " Your New Monthly Payment is now: " $avg
 	sleep 5
 
@@ -488,6 +491,8 @@ case "$service" in
 	;;
 
 	"F" | "f" )
+	
+	while [ 1 ]; do
 	echo " "
 	echo "Welcome to the FAQ page we have included some frequently asked questions? \nPlease select a menu item 1-5! \nThank You!"
 	echo " "
@@ -497,21 +502,28 @@ case "$service" in
 	echo " 3) Return items."
 	echo " 4) Reset Password"
 	echo " 5) Learn about online bill pay."
+	echo " Q) Quit"
 	echo " "
 		read n
 		echo " "
-			case $n in
-				1) echo "Sales: \nLearn about new customer offers or add to your current services Call 1-888-234-0001 \nCustomer Support: \nGet help with your new services or account questions Call 1-888-234-0002";;
-				2) echo "Main Branch: \n1607 Red Oak ln, Roanoke VA, 24018 \nDrop Off Locations: \n2875 Brandon Ave, Roanoke VA, 24018";;
-				3) echo "How to return to a store: \nBring your item with its original product packaging and tags (if available) and proof of purchase to the customer service desk for return or exchange. \nHow to return by mail: \nWhether you need to return items purchased online or in a retail store, you can begin the mail-in return process online";;
-				4) echo "When you log in you are directed to generate a password. \nIf you are not generated a password please call Customer Support at 1-888-234-0002";;
-				5) echo "Benefits of online include accessing your recent billing statements, payment options, and history without delay at your convenience. Save the enviroment at www.personacentury.com.";;
-				*) echo "invalid option";;
-			esac	
+		case $n in
+			1) echo "Sales: \nLearn about new customer offers or add to your current services Call 1-888-234-0001 \nCustomer Support: \nGet help with your new services or account questions Call 1-888-234-0002";;
+
+			2) echo "Main Branch: \n1607 Red Oak ln, Roanoke VA, 24018 \nDrop Off Locations: \n2875 Brandon Ave, Roanoke VA, 24018";;
+			3) echo "How to return to a store: \nBring your item with its original product packaging and tags if available and proof of purchase to the customer service desk for return or exchange. \nHow to return by mail: \nWhether you need to return items purchased online or in a retail store, you can begin the mail-in return process online";;
+			4) echo "When you log in you are directed to generate a password. \nIf you are not generated a password please call Customer Support at 1-888-234-0002";;
+			5) echo "Benefits of online include accessing your recent billing statements, payment options, and history without delay at your convenience. Save the enviroment at www.personacentury.com.";;
+			"Q" | "q" ) break;;
+			*) echo "invalid option";;
+		esac
+
 	echo " "
 	echo "Press ENTER to continue."
 	read anykey
-		;;
+	done
+
+;;
+
 
 	"C" | "c" )
 	echo " "
